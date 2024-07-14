@@ -1,4 +1,5 @@
 /// <reference types = "cypress" />
+import loginPage from "../support/page-object/loginPage"
 
 describe("Very first test", () => {
     it("Simply test: Open page and assert if the bot is visible", () => {
@@ -7,7 +8,7 @@ describe("Very first test", () => {
         cy.visit("/")
 
         //assert if the bot image and "swag labs" logo are visible:
-        cy.get(".bot_column").should("be.visible")
-        cy.get(".login_logo").should("be.visible")
+        loginPage.botImage.should("be.visible")
+        loginPage.swagLabsLogo.should("be.visible")
     })
 })
