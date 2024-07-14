@@ -1,0 +1,19 @@
+{
+  "name": "cypressportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d0minikjankowski/cypressPortfolio.git"
+  },
+  "author": "Dominik Jankowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d0minikjankowski/cypressPortfolio/issues"
+  },
+  "homepage": "https://github.com/d0minikjankowski/cypressPortfolio#readme"
+}
