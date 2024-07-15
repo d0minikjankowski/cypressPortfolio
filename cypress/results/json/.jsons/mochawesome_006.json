@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-07-15T17:29:40.331Z",
+    "end": "2024-07-15T17:29:43.198Z",
+    "duration": 2867,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7c62bda2-9db6-4623-a6f4-49b6462387c9",
+      "title": "",
+      "fullFile": "cypress/integration/first-Test.spec.js",
+      "file": "cypress/integration/first-Test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a6be6c1f-a5fc-4fa8-8fc1-c8224fd02e83",
+          "title": "Very first test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Simply test: Open page and assert if the bot is visible",
+              "fullTitle": "Very first test Simply test: Open page and assert if the bot is visible",
+              "timedOut": null,
+              "duration": 2226,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//navigate to the \"https://www.saucedemo.com/v1/\"\ncy.visit(\"/\"); //assert if the bot image and \"swag labs\" logo are visible:\n_loginPage.default.botImage.should(\"be.visible\");\n_loginPage.default.swagLabsLogo.should(\"be.visible\");",
+              "err": {},
+              "uuid": "5e57d148-2585-4a02-a513-5f08c300fba2",
+              "parentUUID": "a6be6c1f-a5fc-4fa8-8fc1-c8224fd02e83",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5e57d148-2585-4a02-a513-5f08c300fba2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2226,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json/.jsons",
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportPageTitle": "mochawesome report title",
+        "report:merge": "mochawesome-merge --reportDir cypress/results/json > cypress/results/mochawesome-bundle.json",
+        "report:generate": "marge cypress/results/mochawesome-bundle.json -o cypress/reports/html"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

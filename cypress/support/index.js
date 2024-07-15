@@ -14,7 +14,16 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+// import './commands'
+// import 'cypress-mochawesome-reporter/register'
 
+// // module.exports = (on, config) => {
+//     require('cypress-mochawesome-reporter/plugin')(on);
+//   };
+
+// "report:merge": "mochawesome-merge --reportDir cypress/results/json > cypress/results/mochawesome-bundle.json",
+
+// "report:generate": "marge cypress/results/mochawesome-bundle.json -o cypress/reports/html"
+  
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

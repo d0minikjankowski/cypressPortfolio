@@ -1,5 +1,13 @@
 {
     "baseUrl": "https://www.saucedemo.com/v1/",
     "includeShadowDom": true,
-    "chromeWebSecurity": true
-}
+    "chromeWebSecurity": true,
+    "reporter": "cypress-mochawesome-reporter",
+        "reporterOptions": {
+    "reportDir": "cypress/results/json",
+    "overwrite": false,
+    "html": false,
+    "json": true
+
+
+}}

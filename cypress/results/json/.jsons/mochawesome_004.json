@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-07-15T17:27:28.739Z",
+    "end": "2024-07-15T17:27:31.760Z",
+    "duration": 3021,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "349e7c46-5352-49bd-b201-75d6b5931d40",
+      "title": "",
+      "fullFile": "cypress/integration/first-Test.spec.js",
+      "file": "cypress/integration/first-Test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c19881d5-b1e2-4e1a-8d1f-57b920cce43f",
+          "title": "Very first test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Simply test: Open page and assert if the bot is visible",
+              "fullTitle": "Very first test Simply test: Open page and assert if the bot is visible",
+              "timedOut": null,
+              "duration": 2456,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress/integration/first-Test.spec.js\"\n}",
+              "code": "//navigate to the \"https://www.saucedemo.com/v1/\"\ncy.visit(\"/\"); //assert if the bot image and \"swag labs\" logo are visible:\n_loginPage.default.botImage.should(\"be.visible\");\n_loginPage.default.swagLabsLogo.should(\"be.visible\");",
+              "err": {},
+              "uuid": "931b69aa-dcac-4c86-87f5-2ea6c0206b50",
+              "parentUUID": "c19881d5-b1e2-4e1a-8d1f-57b920cce43f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "931b69aa-dcac-4c86-87f5-2ea6c0206b50"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2456,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json/.jsons",
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportPageTitle": "mochawesome report title",
+        "report:merge": "mochawesome-merge --reportDir cypress/results/json > cypress/results/mochawesome-bundle.json",
+        "report:generate": "marge cypress/results/mochawesome-bundle.json -o cypress/reports/html"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
