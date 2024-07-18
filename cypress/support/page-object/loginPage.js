@@ -19,6 +19,10 @@ class LoginPage {
     get btnLogin() {
         return cy.get("#login-button")
     }
+
+    clickOnButtonLogin() {
+        this.btnLogin.click();
+    }
 }
 
 export default new LoginPage();

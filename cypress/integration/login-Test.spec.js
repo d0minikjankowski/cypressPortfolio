@@ -2,29 +2,16 @@
 import loginPage from "../support/page-object/loginPage"
 import mainPage from "../support/page-object/mainPage"
 
-describe("Log in test.", () => {
-    it("Log in and assert if you are on the main page.", () => {
+describe("Log in and assertions on the login page:", () => {
 
-        //navigate to the "https://www.saucedemo.com/v1/"
-        cy.visit("/")
+    it("Log in:", () => {
+        cy.goToUrl()
+        cy.loginOnMainPage()
+    })
 
-        //assert if the bot image and "swag labs" logo are visible:
-        loginPage.botImage.should("be.visible")
-        loginPage.swagLabsLogo.should("be.visible")
-
-        //input credentials and log in:
-        loginPage.inputUsername.click()
-        loginPage.inputUsername.type("standard_user")
-        loginPage.inputPassword.click();
-        loginPage.inputPassword.type("secret_sauce");
-        loginPage.btnLogin.click()
-
-        //assert if you are on the main page:
-        mainPage.redRobot.should("be.visible")
-
-        //negative assert if login button is visible:
-        loginPage.btnLogin.should("not.exist");
-
-
+    it("Assert if you are on the main page:", () => {
+        mainPage.redRobot.should("be.visible") //check if the red robot icon is visible
+        mainPage.swagLabsLogo.should("be.visible") //check of the SwagLabs logo is visible
+        loginPage.btnLogin.should("not.exist") //check if the login button from the login page is not present
     })
 })
