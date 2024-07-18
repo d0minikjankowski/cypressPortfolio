@@ -1,3 +1,18 @@
+/// <reference types = "cypress" />
+import loginPage from "./page-object/loginPage"
+Cypress.Commands.add("loginOnMainPage", () => {
+    // cy.visit("/")
+    loginPage.inputUsername.click()
+    loginPage.inputUsername.type("standard_user")
+    loginPage.inputPassword.click();
+    loginPage.inputPassword.type("secret_sauce");
+    loginPage.btnLogin.click()
+})
+
+Cypress.Commands.add("goToUrl", () => {
+    cy.visit("/")
+})
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
