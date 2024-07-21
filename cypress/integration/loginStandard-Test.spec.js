@@ -2,11 +2,12 @@
 import loginPage from "../support/page-object/loginPage"
 import mainPage from "../support/page-object/mainPage"
 
-describe("Log in and assertions on the login page:", () => {
+describe("Standard log in and assertions on the login page:", () => {
 
-    it("Log in:", () => {
+    it("Log in standard user:", () => {
         cy.goToUrl()
-        cy.loginOnMainPage()
+        cy.loginStandard()
+        cy.wait(5000)
     })
 
     it("Assert if you are on the main page:", () => {

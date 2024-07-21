@@ -20,6 +20,14 @@ class LoginPage {
         return cy.get("#login-button")
     }
 
+    get btnError() {
+        return cy.get(".error-button")
+    }
+
+    get errorMessage() {
+        return cy.get('[data-test="error"]')
+    }
+
     clickOnButtonLogin() {
         this.btnLogin.click();
     }

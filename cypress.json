@@ -1,5 +1,15 @@
 {
     "baseUrl": "https://www.saucedemo.com/v1/",
     "includeShadowDom": true,
-    "chromeWebSecurity": true
+    "chromeWebSecurity": true,
+    "env": {
+        "username_standard": "standard_user",
+        "username_locked_out": "locked_out_user",
+        "username_problem": "problem_user",
+        "username_performanceGlitch": "performance_glitch_user",
+        "password": "secret_sauce",
+        "incorrectPassword": "socret_souce",
+        "incorrectPasswordErrorText": "Epic sadface: Username and password do not match any user in this service",
+        "lockedOutUserErrorMessage": "Epic sadface: Sorry, this user has been locked out."
+    }
 }

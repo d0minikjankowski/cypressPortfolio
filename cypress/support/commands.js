@@ -1,13 +1,37 @@
 /// <reference types = "cypress" />
 import loginPage from "./page-object/loginPage"
-Cypress.Commands.add("loginOnMainPage", () => {
-    // cy.visit("/")
+Cypress.Commands.add("loginStandard", () => {
     loginPage.inputUsername.click()
-    loginPage.inputUsername.type("standard_user")
+    loginPage.inputUsername.type(Cypress.env("username_standard"))
     loginPage.inputPassword.click();
-    loginPage.inputPassword.type("secret_sauce");
+    loginPage.inputPassword.type(Cypress.env("password"));
     loginPage.btnLogin.click()
 })
+
+Cypress.Commands.add("loginLockedOut", () => {
+    loginPage.inputUsername.click()
+    loginPage.inputUsername.type(Cypress.env("username_locked_out"))
+    loginPage.inputPassword.click();
+    loginPage.inputPassword.type(Cypress.env("password"));
+    loginPage.btnLogin.click()
+})
+
+Cypress.Commands.add("loginProblem", () => {
+    loginPage.inputUsername.click()
+    loginPage.inputUsername.type(Cypress.env("username_problem"))
+    loginPage.inputPassword.click();
+    loginPage.inputPassword.type(Cypress.env("password"));
+    loginPage.btnLogin.click()
+})
+
+Cypress.Commands.add("loginPerformanceGlitch", () => {
+    loginPage.inputUsername.click()
+    loginPage.inputUsername.type(Cypress.env("username_performanceGlitch"))
+    loginPage.inputPassword.click();
+    loginPage.inputPassword.type(Cypress.env("password"));
+    loginPage.btnLogin.click()
+})
+
 
 Cypress.Commands.add("goToUrl", () => {
     cy.visit("/")
