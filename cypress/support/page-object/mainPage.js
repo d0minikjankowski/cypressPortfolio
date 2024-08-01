@@ -22,6 +22,22 @@ class MainPage {
     get bikeLight() {
         return cy.get('[src="./img/bike-light-1200x1500.jpg"]')
     }
+
+    get boltTshirt() {
+        return cy.get('[src="./img/bolt-shirt-1200x1500.jpg"]')
+    }
+
+    get jacket() {
+        return cy.get("#item_5_title_link")
+    }
+
+    get onesie() {
+        return cy.contains("[class=inventory_item_name]", "Sauce Labs Onesie")
+    }
+
+    get redTshirt() {
+        return cy.contains("[class=inventory_item_name]", "Test.allTheThings() T-Shirt (Red)")
+    }
 }
 
 export default new MainPage();
