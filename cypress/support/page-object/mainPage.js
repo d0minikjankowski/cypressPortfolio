@@ -38,6 +38,14 @@ class MainPage {
     get redTshirt() {
         return cy.contains("[class=inventory_item_name]", "Test.allTheThings() T-Shirt (Red)")
     }
+
+    get burgerBttn() {
+        return cy.get(".bm-burger-button")
+    }
+
+    get addToCartBttn() {
+        return cy.get(".btn_primary.btn_inventory")
+    }
 }
 
 export default new MainPage();
