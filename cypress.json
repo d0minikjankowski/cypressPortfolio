@@ -11,5 +11,19 @@
         "incorrectPassword": "socret_souce",
         "incorrectPasswordErrorText": "Epic sadface: Username and password do not match any user in this service",
         "lockedOutUserErrorMessage": "Epic sadface: Sorry, this user has been locked out."
-    }
+    },
+
+    "testFiles": [
+        "loginStandard-Test.spec.js",
+        "wrongPassword-Test.spec.js",
+        "getAsVariable-Test.spec.js",
+        "testMainPage-Test.spec.js",
+        "loginLockedOut-Test.spec.js",
+        "loginProblem-Test.spec.js",
+        "loginPerformanceGlitch-Test.spec.js"
+
+
+
+
+    ]
 }

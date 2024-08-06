@@ -7,7 +7,7 @@ describe("Standard log in and assertions on the login page:", () => {
     it("Log in standard user:", () => {
         cy.goToUrl()
         cy.loginStandard()
-        cy.wait(5000)
+        // cy.wait(5000)
     })
 
     it("Assert if you are on the main page:", () => {

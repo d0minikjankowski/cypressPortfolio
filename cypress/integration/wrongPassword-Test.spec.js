@@ -12,7 +12,7 @@ import mainPage from "../support/page-object/mainPage"
 // } 
 
 describe("[negative] Try to log in with an incorrect password", () => {
-    it("wrong password for the standarcd ..d user:", () => {
+    it("wrong password for the standard user:", () => {
         cy.visit("/")
         loginPage.inputUsername.type(Cypress.env("username_standard"))
         loginPage.inputPassword.type(Cypress.env("incorrectPassword"))
